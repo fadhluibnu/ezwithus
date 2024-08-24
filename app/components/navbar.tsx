@@ -5,14 +5,14 @@ import { useState } from 'react';
 
 const Navbar = () => {
 
-    const [menu, setMenu] = useState("translate-y-full")
+    const [menu, setMenu] = useState("-z-50 translate-y-full")
 
     const openMenu = () => {
-        setMenu("translate-y-0")
+        setMenu("z-50 translate-y-0")
     }
 
     const closeMenu = () => {
-        setMenu("translate-y-full")
+        setMenu("-z-50 translate-y-full")
     }
 
     return (
@@ -32,7 +32,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <ul className={`top-0 left-0 bottom-0 right-0 bg-white lg:bg-transparent ${menu} lg:translate-y-0 flex flex-col lg:flex-row justify-center items-center lg:flex absolute lg:static gap-x-7 text-2xl text-3xl lg:text-sm font-medium gap-4 duration-300`}>
+            <ul className={`left-0 bottom-0 right-0 bg-white lg:bg-transparent ${menu} lg:translate-y-0 flex flex-col lg:flex-row justify-center items-center lg:flex absolute lg:static gap-x-7 text-2xl text-3xl lg:text-sm font-medium gap-4 duration-300`}>
                 <li>
                     <Link href="/">Beranda</Link>
                 </li>
@@ -56,7 +56,7 @@ const Navbar = () => {
                     </button>
                 </li>
             </ul>
-            <a href="" className='btn-seccondary py-2 px-5 sm:py-2.5 sm:px-7 rounded-full text-white font-base'>
+            <a href="" className='btn-seccondary py-2 px-5 sm:py-2.5 sm:px-7 rounded-full text-white font-base hover:scale-105 hover:shadow-xl duration-300 focus:ring-2 focus:ring-stone-950 focus:ring-offset-2'>
                 Hubungi <span className='hidden lg:inline'>Kami</span>
             </a>
         </nav>

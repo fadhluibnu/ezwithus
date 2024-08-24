@@ -44,6 +44,13 @@ h1{
   background-color: #2C57F4;
 }
 
+.text-seccondary{
+  color: #5D5D7C;
+}
+.text-blue{
+  color: #2C57F4;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
