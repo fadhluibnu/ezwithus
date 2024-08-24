@@ -32,7 +32,8 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <ul className={`left-0 bottom-0 right-0 bg-white lg:bg-transparent ${menu} lg:translate-y-0 flex flex-col lg:flex-row justify-center items-center lg:flex absolute lg:static gap-x-7 text-2xl text-3xl lg:text-sm font-medium gap-4 duration-300`}>
+            {/* left-0 bottom-0 right-0 bg-white lg:bg-transparent     gap-4  */}
+            <ul className={`flex flex-col lg:flex-row justify-center items-center gap-x-7 gap-y-4 text-2xl text-3xl lg:text-sm font-medium duration-300 absolute lg:static ${menu} lg:z-10 lg:transform-none`}>
                 <li>
                     <Link href="/">Beranda</Link>
                 </li>
