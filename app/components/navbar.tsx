@@ -17,8 +17,8 @@ const Navbar = () => {
 
     return (
         <nav className="flex w-full px-4 py-5 lg:py-8 lg:px-[75px] items-center justify-between">
-            <button onClick={() => openMenu()}>
-                <img src="/assets/hamburger.webp" alt="menu" width="50px" className='hidden sm:inline-block lg:hidden' />
+            <button onClick={() => openMenu()} className='hidden sm:inline-block lg:hidden'>
+                <img src="/assets/hamburger.webp" alt="menu" width="50px" className='' />
             </button>
             <div className="flex gap-x-1.5">
                 <button onClick={() => openMenu()}>
@@ -32,7 +32,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <ul className={`top-0 left-0 bottom-0 right-0 bg-white ${menu} flex flex-col justify-center items-center lg:flex absolute lg:static gap-x-7 text-2xl text-3xl lg:text-sm font-medium gap-4 duration-300`}>
+            <ul className={`top-0 left-0 bottom-0 right-0 bg-white lg:bg-transparent ${menu} lg:translate-y-0 flex flex-col lg:flex-row justify-center items-center lg:flex absolute lg:static gap-x-7 text-2xl text-3xl lg:text-sm font-medium gap-4 duration-300`}>
                 <li>
                     <Link href="/">Beranda</Link>
                 </li>
