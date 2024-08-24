@@ -5,14 +5,14 @@ import { useState } from 'react';
 
 const Navbar = () => {
 
-    const [menu, setMenu] = useState("invisible -z-50 translate-y-full")
+    const [menu, setMenu] = useState("invisible lg:visible -z-50 translate-y-full")
 
     const openMenu = () => {
         setMenu("top-0 z-50 translate-y-0")
     }
 
     const closeMenu = () => {
-        setMenu("invisible -z-50 translate-y-full")
+        setMenu("invisible lg:visible -z-50 translate-y-full")
     }
 
     return (

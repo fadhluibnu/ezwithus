@@ -50,6 +50,10 @@ h1{
 .text-blue{
   color: #2C57F4;
 }
+/* 
+*{
+  border: black solid 1px;
+} */
 
 @layer utilities {
   .text-balance {
