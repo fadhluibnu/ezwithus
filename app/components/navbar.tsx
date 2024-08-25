@@ -33,7 +33,7 @@ const Navbar = () => {
                 </div>
             </div>
             {/* left-0 bottom-0 right-0 bg-white lg:bg-transparent     gap-4  */}
-            <ul className={`flex flex-col lg:flex-row justify-center items-center gap-x-7 gap-y-4 text-2xl text-3xl lg:text-sm font-medium duration-300 absolute lg:static ${menu} lg:z-10 lg:transform-none`}>
+            <ul className={`flex flex-col lg:flex-row justify-center items-center gap-x-7 gap-y-4 text-2xl text-3xl lg:text-sm font-medium duration-300 absolute lg:static ${menu} lg:z-10 lg:transform-none left-0 bottom-0 right-0 bg-white lg:bg-transparent`}>
                 <li>
                     <Link href="/">Beranda</Link>
                 </li>
