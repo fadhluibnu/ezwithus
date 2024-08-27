@@ -8,8 +8,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --background-web: #F1F4F5;
-  --h1-color: #080C2E;
+  --background-web: #f1f4f5;
+  --h1-color: #080c2e;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,7 +22,7 @@
 
 body {
   background-color: var(--background-web);
-  font-family: "Poppins" !important;
+  font-family: 'Poppins' !important;
   /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -32,23 +32,23 @@ body {
     rgb(var(--background-start-rgb)); */
 }
 
-h1{
+h1 {
   color: var(--h1-color);
 }
 
-.btn-seccondary{
-  background-color: #080C2E;
+.btn-seccondary {
+  background-color: #080c2e;
 }
 
-.btn-primary{
-  background-color: #2C57F4;
+.btn-primary {
+  background-color: #2c57f4;
 }
 
-.text-seccondary{
-  color: #5D5D7C;
+.text-seccondary {
+  color: #5d5d7c;
 }
-.text-blue{
-  color: #2C57F4;
+.text-blue {
+  color: #2c57f4;
 }
 /* 
 *{
