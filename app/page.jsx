@@ -219,7 +219,7 @@ const SectionTwo = ({ idSection }) => {
       </div>
       <div className='grid md:grid-cols-2 lg:grid-cols-3 mt-8 gap-8 lg:items-center'>
         {PLANS.map(val => (
-          <PriceCard {...val} {...val.modifier} />
+          <PriceCard key={val.title} {...val} {...val.modifier} />
         ))}
       </div>
     </section>

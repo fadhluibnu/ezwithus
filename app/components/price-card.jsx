@@ -141,6 +141,7 @@ const PriceCard = ({
         <hr />
         {features.map(val => (
           <ListOfBenefit
+            key={Math.random()}
             icon={val.status ? <CheckIcon /> : <XIcon />}
             color={colorListBenefit}
             text={val?.text}
