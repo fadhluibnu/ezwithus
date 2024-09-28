@@ -1,5 +1,9 @@
+import Image from 'next/image';
 import Button from './components/button';
 import PriceCard from './components/price-card';
+import ProjectCard from './components/project-card';
+import Link from 'next/link';
+
 const SectionOne = ({ idSection }) => {
   return (
     <>
@@ -206,7 +210,7 @@ const SectionTwo = ({ idSection }) => {
   return (
     <section
       id={idSection}
-      className='w-100 px-4 py-5 lg:py-8 lg:px-[75px] md:mt-5 lg:mt-1 xl:mt-6'
+      className='w-100 px-4 py-5 lg:py-8 lg:px-[75px] md:mt-5 lg:mt-12'
     >
       <div className='flex flex-col gap-2.5 items-center'>
         <h1 className='font-["ClashDisplay-Semibold"] text-2xl md:text-4xl lg:text-5xl lg:text-center'>
@@ -226,11 +230,49 @@ const SectionTwo = ({ idSection }) => {
   );
 };
 
+const PORTOFOLIO = [
+  {
+    image: "/assets/portofolio1.webp"
+  },
+  {
+    image: "/assets/portofolio2.webp"
+  },
+  {
+    image: "/assets/portofolio3.webp"
+  }
+] 
+const SectionThree = ({ idSection }) => {
+  return (
+    <section
+      id={idSection}
+      className='w-100 px-4 py-5 lg:py-8 lg:px-[75px] md:mt-5 lg:mt-12'
+    >
+      <div className='flex flex-col gap-2.5 sm:items-center'>
+        <h1 className='font-["ClashDisplay-Semibold"] text-2xl md:text-4xl lg:text-5xl lg:text-center'>
+          Proyek Yang Telah Kami Kerjakan
+        </h1>
+        <p className='text-seccondary text-sm md:font-medium md:text-base lg:max-w-2xl lg:text-center'>
+          Kami membangun dan membuat proyek yang berkualitas untuk mepercepat dan mempermudah
+          projek semua orang dengan menggunakan layanan kami
+        </p>
+      </div>
+      <div className='grid md:grid-cols-2 lg:grid-cols-3 mt-8 gap-8 lg:items-center'>
+        {
+          PORTOFOLIO.map(val => (
+            <ProjectCard key={val.image} image={val.image}/>
+          ))
+        }
+      </div>
+    </section>
+  )
+}
+
 export default function Home() {
   return (
     <>
       <SectionOne idSection='beranda' />
       <SectionTwo idSection='layanan' />
+      <SectionThree idSection='portofolio' />
     </>
   );
 }
