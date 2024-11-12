@@ -35,6 +35,9 @@ body {
 h1 {
   color: var(--h1-color);
 }
+h2 {
+  color: var(--h1-color);
+}
 
 .btn-seccondary {
   background-color: #080c2e;

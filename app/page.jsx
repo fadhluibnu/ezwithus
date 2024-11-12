@@ -240,7 +240,8 @@ const PORTOFOLIO = [
   {
     image: "/assets/portofolio3.webp"
   }
-] 
+]
+
 const SectionThree = ({ idSection }) => {
   return (
     <section
@@ -259,9 +260,47 @@ const SectionThree = ({ idSection }) => {
       <div className='grid md:grid-cols-2 lg:grid-cols-3 mt-8 gap-8 lg:items-center'>
         {
           PORTOFOLIO.map(val => (
-            <ProjectCard key={val.image} image={val.image}/>
+            <ProjectCard key={val.image} image={val.image} />
           ))
         }
+      </div>
+    </section>
+  )
+}
+
+const SectionFour = ({ idSection }) => {
+  return (
+    <section
+      id={idSection}
+      className='w-100 px-4 py-5 lg:py-8 lg:px-[75px] md:mt-5 lg:mt-12 grid sm:grid-cols-2'
+    >
+      <img className='hidden sm:inline-block' src="/assets/banner_section4.webp" alt="Banner Section 4" width='505px' />
+      <div className='flex flex-col gap-5'>
+        <div className='flex flex-col gap-2'>
+          <h1 className='font-["ClashDisplay-Semibold"] text-2xl md:text-4xl lg:text-5xl'>
+            Cara Menggunakan Layanan Kami?
+          </h1>
+          <p className='text-seccondary text-sm md:font-medium md:text-base lg:max-w-2xl'>
+            Tahapan mudah untuk mulai menggunakan layanan kami, dari konsultasi hingga eksekusi.
+          </p>
+        </div>
+        <div className='flex flex-col gap-2'>
+          <div className='bg-white p-5 flex gap-4 rounded-2xl items-center'>
+            <svg width="46" height="47" viewBox="0 0 46 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.1925 42.9227H28.6925C38.2759 42.9227 42.1092 39.0894 42.1092 29.5061V18.0061C42.1092 8.42275 38.2759 4.58942 28.6925 4.58942H17.1925C7.60921 4.58942 3.77588 8.42275 3.77588 18.0061V29.5061C3.77588 39.0894 7.60921 42.9227 17.1925 42.9227Z" stroke="#2C57F4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M3.77588 25.0978L15.2759 25.0594C16.7134 25.0594 18.3234 26.1519 18.86 27.4936L21.045 33.0136C21.5434 34.2594 22.3292 34.2594 22.8275 33.0136L27.2167 21.8778C27.6384 20.8044 28.4242 20.7661 28.9609 21.7819L30.9542 25.5578C31.5484 26.6886 33.0817 27.6086 34.3467 27.6086H42.1284" stroke="#2C57F4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <div className='flex flex-col'>
+              <h2 className='text-xl font-bold'>Hubungi Kami</h2>
+              <p className='text-seccondary'>Tanya dan konsultasikan proyek anda lewat kontak kami</p>
+            </div>
+          </div>
+        </div>
+        <Button
+          background='btn-primary'
+          color='text-white'
+          content={'Hubungi Sekarang'}
+        />
       </div>
     </section>
   )
@@ -273,6 +312,7 @@ export default function Home() {
       <SectionOne idSection='beranda' />
       <SectionTwo idSection='layanan' />
       <SectionThree idSection='portofolio' />
+      <SectionFour idSection='howto' />
     </>
   );
 }
