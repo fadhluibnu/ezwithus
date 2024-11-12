@@ -4,6 +4,7 @@ import PriceCard from './components/price-card';
 import ProjectCard from './components/project-card';
 import Link from 'next/link';
 import FlowCard from './components/flow-card';
+import TestiCard from './components/testimoni-card';
 
 const SectionOne = ({ idSection }) => {
   // lg:px-[75px]
@@ -271,18 +272,215 @@ const SectionThree = ({ idSection }) => {
 
 const FLOW = [
   {
+    icon: (
+      <svg
+        width='46'
+        height='47'
+        viewBox='0 0 46 47'
+        fill='none'
+        xmlns='http://www.w3.org/2000/svg'
+      >
+        <path
+          d='M17.1925 42.9227H28.6925C38.2759 42.9227 42.1092 39.0894 42.1092 29.5061V18.0061C42.1092 8.42275 38.2759 4.58942 28.6925 4.58942H17.1925C7.60921 4.58942 3.77588 8.42275 3.77588 18.0061V29.5061C3.77588 39.0894 7.60921 42.9227 17.1925 42.9227Z'
+          stroke='#2C57F4'
+          strokeWidth='3'
+          strokeLinecap='round'
+          strokeLinejoin='round'
+        />
+        <path
+          d='M3.77588 25.0978L15.2759 25.0594C16.7134 25.0594 18.3234 26.1519 18.86 27.4936L21.045 33.0136C21.5434 34.2594 22.3292 34.2594 22.8275 33.0136L27.2167 21.8778C27.6384 20.8044 28.4242 20.7661 28.9609 21.7819L30.9542 25.5578C31.5484 26.6886 33.0817 27.6086 34.3467 27.6086H42.1284'
+          stroke='#2C57F4'
+          strokeWidth='3'
+          strokeLinecap='round'
+          strokeLinejoin='round'
+        />
+      </svg>
+    ),
     title: 'Hubungi Kami',
     desc: 'Tanya dan konsultasikan proyek anda lewat kontak kami.',
   },
   {
-    title: 'Kesepatakan',
+    icon: (
+      <svg
+        width='39'
+        height='40'
+        viewBox='0 0 39 40'
+        fill='none'
+        xmlns='http://www.w3.org/2000/svg'
+      >
+        <path
+          d='M13.5 21.2357L17.8125 25.5482L25 15.4857M19.25 2C14.9102 6.12128 9.13051 8.38169 3.14617 8.29817C2.38494 10.6173 1.99804 13.0429 2.00001 15.4837C2.00001 26.2017 9.32934 35.2062 19.25 37.7612C29.1707 35.2082 36.5 26.2037 36.5 15.4857C36.5 12.9748 36.0975 10.5579 35.3538 8.29625H35.0625C28.9368 8.29625 23.3708 5.90425 19.25 2Z'
+          stroke='#2C57F4'
+          stroke-width='3.5'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        />
+      </svg>
+    ),
+    title: 'Kesepakatan',
     desc: 'Membuat kesepakatan terkait detail proyek dan harga.',
   },
   {
+    icon: (
+      <svg
+        width='46'
+        height='46'
+        viewBox='0 0 46 46'
+        fill='none'
+        xmlns='http://www.w3.org/2000/svg'
+      >
+        <path
+          d='M18.4 38.3333H27.6C35.2667 38.3333 38.3334 35.2667 38.3334 27.6V18.4C38.3334 10.7333 35.2667 7.66666 27.6 7.66666H18.4C10.7334 7.66666 7.66669 10.7333 7.66669 18.4V27.6C7.66669 35.2667 10.7334 38.3333 18.4 38.3333Z'
+          stroke='#2C57F4'
+          stroke-width='3'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        />
+        <path
+          d='M20.125 32.5833H25.875C30.6667 32.5833 32.5834 30.6667 32.5834 25.875V20.125C32.5834 15.3333 30.6667 13.4167 25.875 13.4167H20.125C15.3334 13.4167 13.4167 15.3333 13.4167 20.125V25.875C13.4167 30.6667 15.3334 32.5833 20.125 32.5833Z'
+          stroke='#2C57F4'
+          stroke-width='3'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        />
+        <path
+          d='M15.3525 7.66668V3.83334'
+          stroke='#2C57F4'
+          stroke-width='3'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        />
+        <path
+          d='M23 7.66668V3.83334'
+          stroke='#2C57F4'
+          stroke-width='3'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        />
+        <path
+          d='M30.6667 7.66668V3.83334'
+          stroke='#2C57F4'
+          stroke-width='3'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        />
+        <path
+          d='M38.3333 15.3333H42.1666'
+          stroke='#2C57F4'
+          stroke-width='3'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        />
+        <path
+          d='M38.3333 23H42.1666'
+          stroke='#2C57F4'
+          stroke-width='3'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        />
+        <path
+          d='M38.3333 30.6667H42.1666'
+          stroke='#2C57F4'
+          stroke-width='3'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        />
+        <path
+          d='M30.6667 38.3333V42.1667'
+          stroke='#2C57F4'
+          stroke-width='3'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        />
+        <path
+          d='M23.0192 38.3333V42.1667'
+          stroke='#2C57F4'
+          stroke-width='3'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        />
+        <path
+          d='M15.3525 38.3333V42.1667'
+          stroke='#2C57F4'
+          stroke-width='3'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        />
+        <path
+          d='M3.83331 15.3333H7.66665'
+          stroke='#2C57F4'
+          stroke-width='3'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        />
+        <path
+          d='M3.83331 23H7.66665'
+          stroke='#2C57F4'
+          stroke-width='3'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        />
+        <path
+          d='M3.83331 30.6667H7.66665'
+          stroke='#2C57F4'
+          stroke-width='3'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        />
+        <path
+          d='M23 18.5917L21.1983 21.735C20.7958 22.425 21.1216 23 21.9266 23H24.0733C24.8783 23 25.2041 23.575 24.8016 24.265L23 27.4083'
+          stroke='#2C57F4'
+          stroke-width='3'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        />
+      </svg>
+    ),
     title: 'Eksekusi',
     desc: 'Proyek akan dieksekusi setelah kesepakatan diputuskan.',
   },
   {
+    icon: (
+      <svg
+        width='46'
+        height='46'
+        viewBox='0 0 46 46'
+        fill='none'
+        xmlns='http://www.w3.org/2000/svg'
+      >
+        <path
+          d='M10.6182 21.3133C1.64825 21.9458 1.64825 34.9983 10.6182 35.6308H14.2983'
+          stroke='#2C57F4'
+          stroke-width='3'
+          stroke-miterlimit='10'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        />
+        <path
+          d='M10.7142 21.3133C4.5617 4.19747 30.5133 -2.64502 33.4841 15.3333C41.7833 16.3875 45.1375 27.4467 38.8509 32.9475C36.9342 34.6917 34.4617 35.65 31.8742 35.6308H31.7016'
+          stroke='#2C57F4'
+          stroke-width='3'
+          stroke-miterlimit='10'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        />
+        <path
+          d='M32.5834 31.6825C32.5834 33.1008 32.2766 34.4425 31.7016 35.6308C31.5483 35.9758 31.3759 36.3017 31.1842 36.6083C29.5359 39.3875 26.4884 41.2658 23 41.2658C19.5117 41.2658 16.4641 39.3875 14.8158 36.6083C14.6241 36.3017 14.4517 35.9758 14.2984 35.6308C13.7234 34.4425 13.4167 33.1008 13.4167 31.6825C13.4167 26.3925 17.71 22.0992 23 22.0992C28.29 22.0992 32.5834 26.3925 32.5834 31.6825Z'
+          stroke='#2C57F4'
+          stroke-width='3'
+          stroke-miterlimit='10'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        />
+        <path
+          d='M20.01 31.6825L21.9075 33.58L25.99 29.8042'
+          stroke='#2C57F4'
+          stroke-width='3'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        />
+      </svg>
+    ),
     title: 'Selesai',
     desc: 'Pembayaran dan penyerahan proyek.',
   },
@@ -293,27 +491,32 @@ const SectionFour = ({ idSection }) => {
     // lg:px-[75px]
     <section
       id={idSection}
-      className='w-100 px-4 py-5 lg:py-8 md:mt-5 lg:mt-12 grid sm:grid-cols-2'
+      className='w-100 px-4 py-5 lg:py-8 md:mt-5 lg:mt-12 grid md:grid-cols-2 gap-5'
     >
       <img
-        className='hidden sm:inline-block'
+        className='hidden md:block'
         src='/assets/banner_section4.webp'
         alt='Banner Section 4'
         width='505px'
       />
       <div className='flex flex-col gap-5'>
         <div className='flex flex-col gap-2'>
-          <h1 className='font-["ClashDisplay-Semibold"] text-2xl md:text-4xl lg:text-5xl'>
+          <h1 className='font-["ClashDisplay-Semibold"] text-3xl lg:text-5xl'>
             Cara Menggunakan Layanan Kami?
           </h1>
-          <p className='text-seccondary text-sm md:font-medium md:text-base lg:max-w-2xl'>
+          <p className='text-seccondary text-sm md:font-medium lg:max-w-2xl'>
             Tahapan mudah untuk mulai menggunakan layanan kami, dari konsultasi
             hingga eksekusi.
           </p>
         </div>
         <div className='flex flex-col gap-4 my-5'>
           {FLOW.map(val => (
-            <FlowCard key={val.title} title={val.title} desc={val.desc} />
+            <FlowCard
+              key={val.title}
+              icon={val.icon}
+              title={val.title}
+              desc={val.desc}
+            />
           ))}
         </div>
         <Button
@@ -326,13 +529,50 @@ const SectionFour = ({ idSection }) => {
   );
 };
 
+const TESTIMONI = [
+  {
+    img: '/assets/testi1.png',
+  },
+  {
+    img: '/assets/testi2.png',
+  },
+  {
+    img: '/assets/testi3.png',
+  },
+];
+
+const SectionFive = ({ idSection }) => {
+  return (
+    <section
+      id={idSection}
+      className='w-100 px-4 py-5 lg:py-8 md:mt-5 lg:mt-12'
+    >
+      <div className='flex flex-col gap-2.5 items-center'>
+        <h1 className='font-["ClashDisplay-semibold"] text-2xl md:text-4xl lg:text-5xl lg:text-center'>
+          Dipercaya Untuk Menangani Proyek
+        </h1>
+        <p className='text-seccondary text-sm md:font-medium md:text-base lg:max-w-2xl lg:text-center'>
+          Klien mempercayakan kami untuk menangani proyek website dan aplikasi
+          mereka. Kami selalu memberikan hasil terbaik sesuai harapan
+        </p>
+        <div className='grid md:grid-cols-2 lg:grid-cols-3 mt-8 gap-8 lg:items-center'>
+          {TESTIMONI.map(val => (
+            <TestiCard key={val.img} image={val.img} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
 export default function Home() {
   return (
     <>
       <SectionOne idSection='beranda' />
       <SectionTwo idSection='layanan' />
       <SectionThree idSection='portofolio' />
-      <SectionFour idSection='pemesanan' />
+      <SectionFour idSection='alur' />
+      <SectionFive idSection='testimoni' />
     </>
   );
 }
