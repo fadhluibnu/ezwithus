@@ -27,9 +27,9 @@ const XIcon = () => {
       <path
         d='M2 12.75L12.5 2.25M2 2.25L12.5 12.75'
         stroke='#E73B3B'
-        stroke-width='3.5'
-        stroke-linecap='round'
-        stroke-linejoin='round'
+        strokeWidth='3.5'
+        strokeLinecap='round'
+        strokeLinejoin='round'
       />
     </svg>
   );
@@ -76,57 +76,57 @@ const PriceCard = ({
           d='M31.5292 27.6V16.2917C31.5292 15.2375 30.6667 14.375 29.6126 14.375H24.0542'
           className={`${iconColor}`}
           stroke='#2C57F4'
-          stroke-width='3'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+          strokeWidth='3'
+          strokeLinecap='round'
+          strokeLinejoin='round'
         />
         <path
           d='M26.9292 11.5L23.4792 14.375L26.9292 17.25'
           className={`${iconColor}`}
           stroke='#2C57F4'
-          stroke-width='3'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+          strokeWidth='3'
+          strokeLinecap='round'
+          strokeLinejoin='round'
         />
         <path
           d='M14.4708 19.55V27.6'
           className={`${iconColor}`}
           stroke='#2C57F4'
-          stroke-width='3'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+          strokeWidth='3'
+          strokeLinecap='round'
+          strokeLinejoin='round'
         />
         <path
           d='M14.7584 18.975C16.8226 18.975 18.4959 17.3017 18.4959 15.2375C18.4959 13.1734 16.8226 11.5 14.7584 11.5C12.6942 11.5 11.0209 13.1734 11.0209 15.2375C11.0209 17.3017 12.6942 18.975 14.7584 18.975Z'
           className={`${iconColor}`}
           stroke='#2C57F4'
-          stroke-width='3'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+          strokeWidth='3'
+          strokeLinecap='round'
+          strokeLinejoin='round'
         />
         <path
           d='M14.4709 34.5C16.3762 34.5 17.9208 32.9554 17.9208 31.05C17.9208 29.1446 16.3762 27.6 14.4709 27.6C12.5655 27.6 11.0209 29.1446 11.0209 31.05C11.0209 32.9554 12.5655 34.5 14.4709 34.5Z'
           className={`${iconColor}`}
           stroke='#2C57F4'
-          stroke-width='3'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+          strokeWidth='3'
+          strokeLinecap='round'
+          strokeLinejoin='round'
         />
         <path
           d='M31.5292 34.5C33.4346 34.5 34.9792 32.9554 34.9792 31.05C34.9792 29.1446 33.4346 27.6 31.5292 27.6C29.6238 27.6 28.0792 29.1446 28.0792 31.05C28.0792 32.9554 29.6238 34.5 31.5292 34.5Z'
           className={`${iconColor}`}
           stroke='#2C57F4'
-          stroke-width='3'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+          strokeWidth='3'
+          strokeLinecap='round'
+          strokeLinejoin='round'
         />
         <path
           d='M17.25 42.1666H28.75C38.3334 42.1666 42.1667 38.3333 42.1667 28.75V17.25C42.1667 7.66665 38.3334 3.83331 28.75 3.83331H17.25C7.66671 3.83331 3.83337 7.66665 3.83337 17.25V28.75C3.83337 38.3333 7.66671 42.1666 17.25 42.1666Z'
           className={`${iconColor}`}
           stroke='#2C57F4'
-          stroke-width='3'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+          strokeWidth='3'
+          strokeLinecap='round'
+          strokeLinejoin='round'
         />
       </svg>
       <div>
