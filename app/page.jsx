@@ -3,7 +3,7 @@ import Button from './components/button';
 import PriceCard from './components/price-card';
 import ProjectCard from './components/project-card';
 import Link from 'next/link';
-import FlowCard from './components/flow-card'
+import FlowCard from './components/flow-card';
 
 const SectionOne = ({ idSection }) => {
   return (
@@ -233,15 +233,15 @@ const SectionTwo = ({ idSection }) => {
 
 const PORTOFOLIO = [
   {
-    image: "/assets/portofolio1.webp"
+    image: '/assets/portofolio1.webp',
   },
   {
-    image: "/assets/portofolio2.webp"
+    image: '/assets/portofolio2.webp',
   },
   {
-    image: "/assets/portofolio3.webp"
-  }
-] 
+    image: '/assets/portofolio3.webp',
+  },
+];
 const SectionThree = ({ idSection }) => {
   return (
     <section
@@ -253,39 +253,37 @@ const SectionThree = ({ idSection }) => {
           Proyek Yang Telah Kami Kerjakan
         </h1>
         <p className='text-seccondary text-sm md:font-medium md:text-base lg:max-w-2xl lg:text-center'>
-          Kami membangun dan membuat proyek yang berkualitas untuk mepercepat dan mempermudah
-          projek semua orang dengan menggunakan layanan kami
+          Kami membangun dan membuat proyek yang berkualitas untuk mepercepat
+          dan mempermudah projek semua orang dengan menggunakan layanan kami
         </p>
       </div>
       <div className='grid md:grid-cols-2 lg:grid-cols-3 mt-8 gap-8 lg:items-center'>
-        {
-          PORTOFOLIO.map(val => (
-            <ProjectCard key={val.image} image={val.image}/>
-          ))
-        }
+        {PORTOFOLIO.map(val => (
+          <ProjectCard key={val.image} image={val.image} />
+        ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
 const FLOW = [
   {
-    title: "Hubungi Kami",
-    desc: "Tanya dan konsultasikan proyek anda lewat kontak kami."
+    title: 'Hubungi Kami',
+    desc: 'Tanya dan konsultasikan proyek anda lewat kontak kami.',
   },
   {
-    title: "Kesepatakan",
-    desc: "Membuat kesepakatan terkait detail proyek dan harga."
+    title: 'Kesepatakan',
+    desc: 'Membuat kesepakatan terkait detail proyek dan harga.',
   },
   {
-    title: "Eksekusi",
-    desc: "Proyek akan dieksekusi setelah kesepakatan diputuskan."
+    title: 'Eksekusi',
+    desc: 'Proyek akan dieksekusi setelah kesepakatan diputuskan.',
   },
   {
-    title: "Selesai",
-    desc: "Pembayaran dan penyerahan proyek."
-  }
-]
+    title: 'Selesai',
+    desc: 'Pembayaran dan penyerahan proyek.',
+  },
+];
 
 const SectionFour = ({ idSection }) => {
   return (
@@ -294,21 +292,27 @@ const SectionFour = ({ idSection }) => {
       className='w-100 px-4 py-5 lg:py-8 lg:px-[75px] md:mt-5 lg:mt-12'
     >
       <div className='flex gap-16'>
-        <img src="/assets/banner2.png" alt="" className='hidden md:block max-w-[40%] max-h-[40%] w-full h-full'/>
+        <img
+          src='/assets/banner2.png'
+          alt=''
+          className='hidden md:block max-w-[40%] max-h-[40%] w-full h-full'
+        />
         <div className='w-full'>
-          <h1 className='font-["ClashDisplay-semibold"] text-2xl lg:text-5xl'>Cara Menggunakan Layanan Kami?</h1>
-          <p className='text-seccondary text-sm py-3'>Tahapan mudah untuk mulai menggunakan layanan kami, dari konsultasi hingga eksekusi.</p>
-          {
-          FLOW.map(val => (
-            <FlowCard title={val.title} desc={val.desc}/>
-          ))
-        }
+          <h1 className='font-["ClashDisplay-semibold"] text-2xl lg:text-5xl'>
+            Cara Menggunakan Layanan Kami?
+          </h1>
+          <p className='text-seccondary text-sm py-3'>
+            Tahapan mudah untuk mulai menggunakan layanan kami, dari konsultasi
+            hingga eksekusi.
+          </p>
+          {FLOW.map(val => (
+            <FlowCard title={val.title} desc={val.desc} />
+          ))}
         </div>
       </div>
     </section>
-  )
-}
-
+  );
+};
 
 export default function Home() {
   return (
