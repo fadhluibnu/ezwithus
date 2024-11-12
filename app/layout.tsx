@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang='en'>
       <meta charSet='utf-8' />
       <meta name='viewport' content='width=device-width, initial-scale=1' />
-      <body className='bg-[#F1F4F5]'>
+      <body className='bg-[#F1F4F5] max-w-7xl m-auto'>
         <Navbar />
         <main>{children}</main>
       </body>

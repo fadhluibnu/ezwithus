@@ -18,7 +18,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='flex w-full px-4 py-5 lg:py-8 lg:px-[75px] items-center justify-between'>
+    // lg:px-[75px]
+    <nav className='flex w-full px-4 py-5 lg:py-8 items-center justify-between'>
       <button
         onClick={() => openMenu()}
         className='hidden sm:inline-block lg:hidden'
@@ -78,8 +79,8 @@ const Navbar = () => {
               className='size-12'
             >
               <path
-                stroke-linecap='round'
-                stroke-linejoin='round'
+                strokeLinecap='round'
+                strokeLinejoin='round'
                 d='m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z'
               />
             </svg>
