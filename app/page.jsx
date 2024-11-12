@@ -3,6 +3,7 @@ import Button from './components/button';
 import PriceCard from './components/price-card';
 import ProjectCard from './components/project-card';
 import Link from 'next/link';
+import FlowCard from './components/flow-card'
 
 const SectionOne = ({ idSection }) => {
   return (
@@ -267,12 +268,55 @@ const SectionThree = ({ idSection }) => {
   )
 }
 
+const FLOW = [
+  {
+    title: "Hubungi Kami",
+    desc: "Tanya dan konsultasikan proyek anda lewat kontak kami."
+  },
+  {
+    title: "Kesepatakan",
+    desc: "Membuat kesepakatan terkait detail proyek dan harga."
+  },
+  {
+    title: "Eksekusi",
+    desc: "Proyek akan dieksekusi setelah kesepakatan diputuskan."
+  },
+  {
+    title: "Selesai",
+    desc: "Pembayaran dan penyerahan proyek."
+  }
+]
+
+const SectionFour = ({ idSection }) => {
+  return (
+    <section
+      id={idSection}
+      className='w-100 px-4 py-5 lg:py-8 lg:px-[75px] md:mt-5 lg:mt-12'
+    >
+      <div className='flex gap-16'>
+        <img src="/assets/banner2.png" alt="" className='hidden md:block max-w-[40%] max-h-[40%] w-full h-full'/>
+        <div className='w-full'>
+          <h1 className='font-["ClashDisplay-semibold"] text-2xl lg:text-5xl'>Cara Menggunakan Layanan Kami?</h1>
+          <p className='text-seccondary text-sm py-3'>Tahapan mudah untuk mulai menggunakan layanan kami, dari konsultasi hingga eksekusi.</p>
+          {
+          FLOW.map(val => (
+            <FlowCard title={val.title} desc={val.desc}/>
+          ))
+        }
+        </div>
+      </div>
+    </section>
+  )
+}
+
+
 export default function Home() {
   return (
     <>
       <SectionOne idSection='beranda' />
       <SectionTwo idSection='layanan' />
       <SectionThree idSection='portofolio' />
+      <SectionFour idSection='pemesanan' />
     </>
   );
 }
