@@ -3,6 +3,7 @@ import Button from './components/button';
 import PriceCard from './components/price-card';
 import ProjectCard from './components/project-card';
 import Link from 'next/link';
+import FlowCard from './components/flow-card'
 
 const SectionOne = ({ idSection }) => {
   return (
@@ -268,6 +269,25 @@ const SectionThree = ({ idSection }) => {
   )
 }
 
+const FLOW = [
+  {
+    title: "Hubungi Kami",
+    desc: "Tanya dan konsultasikan proyek anda lewat kontak kami."
+  },
+  {
+    title: "Kesepatakan",
+    desc: "Membuat kesepakatan terkait detail proyek dan harga."
+  },
+  {
+    title: "Eksekusi",
+    desc: "Proyek akan dieksekusi setelah kesepakatan diputuskan."
+  },
+  {
+    title: "Selesai",
+    desc: "Pembayaran dan penyerahan proyek."
+  }
+]
+
 const SectionFour = ({ idSection }) => {
   return (
     <section
@@ -312,7 +332,7 @@ export default function Home() {
       <SectionOne idSection='beranda' />
       <SectionTwo idSection='layanan' />
       <SectionThree idSection='portofolio' />
-      <SectionFour idSection='howto' />
+      <SectionFour idSection='pemesanan' />
     </>
   );
 }
