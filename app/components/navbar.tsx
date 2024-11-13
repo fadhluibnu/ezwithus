@@ -104,7 +104,7 @@ const Navbar = () => {
           <Link href='/about-us'>Tentang Kami</Link>
         </li>
         <Button
-          background={'bg-black mt-3'}
+          background={'bg-black mt-3 lg:hidden'}
           color={'text-white text-lg'}
           content={'Hubungi Kami'}
         />
