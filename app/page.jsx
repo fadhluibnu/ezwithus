@@ -584,10 +584,18 @@ const SectionSeven = ({ idSection }) => {
         <div className='py-10 md:py-0 md:mx-auto'>
           <h1 className='text-white text-xl font-bold pb-5'>Menu</h1>
           <ul className='text-[#8D90A8] text-md'>
-            <li className='pb-3'>Layanan</li>
-            <li className='pb-3'>Portfolio</li>
-            <li className='pb-3'>Testimoni</li>
-            <li className='pb-3'>Tentang Kami</li>
+            <li className='pb-3'>
+              <Link href={'/#layanan'}>Layanan</Link>
+            </li>
+            <li className='pb-3'>
+              <Link href={'/#portofolio'}>Portofolio</Link>
+            </li>
+            <li className='pb-3'>
+              <Link href={'/#testimoni'}>Testimoni</Link>
+            </li>
+            <li className='pb-3'>
+              <Link href={'/about-us'}>Tentang Kami</Link>
+            </li>
           </ul>
         </div>
         <div>
