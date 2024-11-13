@@ -567,11 +567,179 @@ const SectionFive = ({ idSection }) => {
 
 const SectionSeven = ({ idSection }) => {
   return (
-    <section
-      id={idSection}
-      className='px-4 pb-5 pt-[330px] lg:pb-8 bg-[#070C29]'
-    >
-      <div className='flex flex-col gap-2.5 items-center'></div>
+    <section id={idSection} className='px-4 pt-[330px] bg-[#070C29]'>
+      <div className='grid md:grid-cols-3 max-w-screen-xl m-auto'>
+        <div>
+          <div className='flex items-center gap-x-1.5 pb-10'>
+            <img src='/assets/logo2.png' alt='logo' className='w-9 sm:w-10' />
+            <h1 className='text-xl text-white font-bold sm:text-2xl leading-none'>
+              InSoft
+            </h1>
+          </div>
+          <p className='text-sm text-[#5D5D7C]'>
+            We provide various programming, website and application development
+            and creation services for you. Speed ​​up your project with us
+          </p>
+        </div>
+        <div className='py-10 md:py-0 md:mx-auto'>
+          <h1 className='text-white text-xl font-bold pb-5'>Menu</h1>
+          <ul className='text-[#8D90A8] text-md'>
+            <li className='pb-3'>Layanan</li>
+            <li className='pb-3'>Portfolio</li>
+            <li className='pb-3'>Testimoni</li>
+            <li className='pb-3'>Tentang Kami</li>
+          </ul>
+        </div>
+        <div>
+          <h1 className='text-white text-xl font-bold pb-5'>Hubungi Kami</h1>
+          <Button
+            background='btn-footer'
+            color='text-black'
+            content={'Hubungi Sekarang'}
+            className='max-w-10'
+          />
+          <div className='flex flex-cols-4 gap-x-5 py-5'>
+            <button className='rounded-full p-3 bg-white group transition-all ease-in-out hover:bg-[#5d5d7c]'>
+              <svg
+                width='25'
+                height='25'
+                viewBox='0 0 25 25'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <path
+                  d='M17.5 20.7439H7.5C4.5 20.7439 2.5 19.2439 2.5 15.7439V8.7439C2.5 5.2439 4.5 3.7439 7.5 3.7439H17.5C20.5 3.7439 22.5 5.2439 22.5 8.7439V15.7439C22.5 19.2439 20.5 20.7439 17.5 20.7439Z'
+                  stroke='#640EF1'
+                  stroke-width='2'
+                  stroke-miterlimit='10'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                />
+                <path
+                  d='M17.5 9.2439L14.37 11.7439C13.34 12.5639 11.65 12.5639 10.62 11.7439L7.5 9.2439'
+                  stroke='#640EF1'
+                  stroke-width='2'
+                  stroke-miterlimit='10'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                />
+              </svg>
+            </button>
+            <button className='rounded-full p-3 bg-white group transition-all ease-in-out hover:bg-[#5d5d7c]'>
+              <svg
+                width='25'
+                height='25'
+                viewBox='0 0 25 25'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <path
+                  d='M12.5 22.2439C18.0228 22.2439 22.5 17.7667 22.5 12.2439C22.5 6.72105 18.0228 2.2439 12.5 2.2439C6.97715 2.2439 2.5 6.72105 2.5 12.2439C2.5 17.7667 6.97715 22.2439 12.5 22.2439Z'
+                  stroke='#640EF1'
+                  stroke-width='2'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                />
+                <path
+                  d='M8.49998 3.2439H9.49998C7.54998 9.0839 7.54998 15.4039 9.49998 21.2439H8.49998'
+                  stroke='#640EF1'
+                  stroke-width='2'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                />
+                <path
+                  d='M15.5 3.2439C17.45 9.0839 17.45 15.4039 15.5 21.2439'
+                  stroke='#640EF1'
+                  stroke-width='2'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                />
+                <path
+                  d='M3.5 16.2439V15.2439C9.34 17.1939 15.66 17.1939 21.5 15.2439V16.2439'
+                  stroke='#640EF1'
+                  stroke-width='2'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                />
+                <path
+                  d='M3.5 9.24399C9.34 7.29399 15.66 7.29399 21.5 9.24399'
+                  stroke='#640EF1'
+                  stroke-width='2'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                />
+              </svg>
+            </button>
+            <button className='rounded-full p-3 bg-white group transition-all ease-in-out hover:bg-[#5d5d7c]'>
+              <svg
+                width='25'
+                height='25'
+                viewBox='0 0 25 25'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <path
+                  d='M22.47 18.5739C22.47 18.9339 22.39 19.3039 22.22 19.6639C22.05 20.0239 21.83 20.3639 21.54 20.6839C21.05 21.2239 20.51 21.6139 19.9 21.8639C19.3 22.1139 18.65 22.2439 17.95 22.2439C16.93 22.2439 15.84 22.0039 14.69 21.5139C13.54 21.0239 12.39 20.3639 11.25 19.5339C10.1 18.6939 9.01 17.7639 7.97 16.7339C6.94 15.6939 6.01 14.6039 5.18 13.4639C4.36 12.3239 3.7 11.1839 3.22 10.0539C2.74 8.9139 2.5 7.8239 2.5 6.7839C2.5 6.1039 2.62 5.4539 2.86 4.8539C3.1 4.2439 3.48 3.6839 4.01 3.1839C4.65 2.5539 5.35 2.2439 6.09 2.2439C6.37 2.2439 6.65 2.3039 6.9 2.4239C7.16 2.5439 7.39 2.7239 7.57 2.9839L9.89 6.2539C10.07 6.5039 10.2 6.7339 10.29 6.9539C10.38 7.1639 10.43 7.3739 10.43 7.5639C10.43 7.8039 10.36 8.0439 10.22 8.2739C10.09 8.5039 9.9 8.7439 9.66 8.9839L8.9 9.7739C8.79 9.8839 8.74 10.0139 8.74 10.1739C8.74 10.2539 8.75 10.3239 8.77 10.4039C8.8 10.4839 8.83 10.5439 8.85 10.6039C9.03 10.9339 9.34 11.3639 9.78 11.8839C10.23 12.4039 10.71 12.9339 11.23 13.4639C11.77 13.9939 12.29 14.4839 12.82 14.9339C13.34 15.3739 13.77 15.6739 14.11 15.8539C14.16 15.8739 14.22 15.9039 14.29 15.9339C14.37 15.9639 14.45 15.9739 14.54 15.9739C14.71 15.9739 14.84 15.9139 14.95 15.8039L15.71 15.0539C15.96 14.8039 16.2 14.6139 16.43 14.4939C16.66 14.3539 16.89 14.2839 17.14 14.2839C17.33 14.2839 17.53 14.3239 17.75 14.4139C17.97 14.5039 18.2 14.6339 18.45 14.8039L21.76 17.1539C22.02 17.3339 22.2 17.5439 22.31 17.7939C22.41 18.0439 22.47 18.2939 22.47 18.5739Z'
+                  stroke='#640EF1'
+                  stroke-width='2'
+                  stroke-miterlimit='10'
+                />
+              </svg>
+            </button>
+            <button className='rounded-full p-3 bg-white group transition-all ease-in-out hover:bg-[#5d5d7c]'>
+              <svg
+                width='25'
+                height='25'
+                viewBox='0 0 25 25'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <path
+                  d='M22.5 15.2439V9.2439C22.5 4.2439 20.5 2.2439 15.5 2.2439H9.5C4.5 2.2439 2.5 4.2439 2.5 9.2439V15.2439C2.5 20.2439 4.5 22.2439 9.5 22.2439H15.5C20.5 22.2439 22.5 20.2439 22.5 15.2439Z'
+                  stroke='#640EF1'
+                  stroke-width='2'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                />
+                <path
+                  d='M3.02002 7.354H21.98'
+                  stroke='#640EF1'
+                  stroke-width='2'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                />
+                <path
+                  d='M9.02002 2.354V7.214'
+                  stroke='#640EF1'
+                  stroke-width='2'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                />
+                <path
+                  d='M15.98 2.354V6.764'
+                  stroke='#640EF1'
+                  stroke-width='2'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                />
+                <path
+                  d='M10.25 14.694V13.494C10.25 11.954 11.34 11.324 12.67 12.094L13.71 12.694L14.75 13.294C16.08 14.064 16.08 15.324 14.75 16.094L13.71 16.694L12.67 17.294C11.34 18.064 10.25 17.434 10.25 15.894V14.694V14.694Z'
+                  stroke='#640EF1'
+                  stroke-width='2'
+                  stroke-miterlimit='10'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className='text-center py-10'>
+        <p className='text-[#8D90A8]'>
+          All Rights Reserved • Copyright InSoft 2024 in Semarang
+        </p>
+      </div>
     </section>
   );
 };
