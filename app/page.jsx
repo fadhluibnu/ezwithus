@@ -568,7 +568,7 @@ const SectionFive = ({ idSection }) => {
 const SectionSeven = ({ idSection }) => {
   return (
     <>
-      <div className='max-w-screen-xl m-auto grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-30 rounded-[40px] p-12 bg-[#640EF1] relative top-48 left-0 right-0 z-30'>
+      <div className='max-w-screen-xl m-auto grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-30 rounded-[40px] p-12 bg-[#640EF1] relative top-48 mx-2 md:mx-auto md:left-0 md:right-0 z-30'>
         <div className='flex flex-col gap-10'>
           <div>
             <p className='bg-white rounded-full px-4 py-2 inline-block text-sm font-medium'>
@@ -592,7 +592,7 @@ const SectionSeven = ({ idSection }) => {
             />
           </div>
         </div>
-        <div className='flex flex-col flex-wrap gap-2 lg:gap-5 max-h-[365px] justify-center'>
+        <div className='flex flex-col flex-wrap gap-2 lg:gap-5 md:max-h-[365px] justify-center'>
           <div className='py-7 flex flex-col gap-5 bg-white items-center rounded-3xl px-2'>
             <svg
               width='47'
