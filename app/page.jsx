@@ -579,8 +579,13 @@ const SectionSeven = ({ idSection }) => {
             </p>
           </div>
           <div className='flex flex-col gap-2.5'>
-            <h1 className="font-['ClashDisplay-Semibold'] text-4xl lg:text-7xl text-white">Konsultasi Proyek Anda Sekarang</h1>
-            <p className='text-base font-medium text-slate-100'>Kami akan membantu menyelesaikan membuat proyek anda dengan cepat dan berkualitas</p>
+            <h1 className="font-['ClashDisplay-Semibold'] text-4xl lg:text-7xl text-white">
+              Konsultasi Proyek Anda Sekarang
+            </h1>
+            <p className='text-base font-medium text-slate-100'>
+              Kami akan membantu menyelesaikan membuat proyek anda dengan cepat
+              dan berkualitas
+            </p>
           </div>
           <div>
             <Button
@@ -592,44 +597,208 @@ const SectionSeven = ({ idSection }) => {
         </div>
         <div className='flex flex-col flex-wrap gap-2 lg:gap-5 max-h-[365px] justify-center'>
           <div className='py-7 flex flex-col gap-5 bg-white items-center rounded-3xl px-2'>
-            <svg width="47" height="46" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M17.75 42.1667H29.25C38.8334 42.1667 42.6667 38.3334 42.6667 28.75V17.25C42.6667 7.66671 38.8334 3.83337 29.25 3.83337H17.75C8.16671 3.83337 4.33337 7.66671 4.33337 17.25V28.75C4.33337 38.3334 8.16671 42.1667 17.75 42.1667Z" stroke="#640EF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M18.8999 17.1925L14.1274 21.965C13.5716 22.5208 13.5716 23.46 14.1274 24.0158L18.8999 28.7883" stroke="#640EF1" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M28.1 17.1925L32.8725 21.965C33.4283 22.5208 33.4283 23.46 32.8725 24.0158L28.1 28.7883" stroke="#640EF1" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+            <svg
+              width='47'
+              height='46'
+              viewBox='0 0 47 46'
+              fill='none'
+              xmlns='http://www.w3.org/2000/svg'
+            >
+              <path
+                d='M17.75 42.1667H29.25C38.8334 42.1667 42.6667 38.3334 42.6667 28.75V17.25C42.6667 7.66671 38.8334 3.83337 29.25 3.83337H17.75C8.16671 3.83337 4.33337 7.66671 4.33337 17.25V28.75C4.33337 38.3334 8.16671 42.1667 17.75 42.1667Z'
+                stroke='#640EF1'
+                stroke-width='3'
+                stroke-linecap='round'
+                stroke-linejoin='round'
+              />
+              <path
+                d='M18.8999 17.1925L14.1274 21.965C13.5716 22.5208 13.5716 23.46 14.1274 24.0158L18.8999 28.7883'
+                stroke='#640EF1'
+                stroke-width='3'
+                stroke-miterlimit='10'
+                stroke-linecap='round'
+                stroke-linejoin='round'
+              />
+              <path
+                d='M28.1 17.1925L32.8725 21.965C33.4283 22.5208 33.4283 23.46 32.8725 24.0158L28.1 28.7883'
+                stroke='#640EF1'
+                stroke-width='3'
+                stroke-miterlimit='10'
+                stroke-linecap='round'
+                stroke-linejoin='round'
+              />
             </svg>
-            <p className='text-lg font-primary font-semibold'>Website Company Profile</p>
+            <p className='text-lg font-primary font-semibold'>
+              Website Company Profile
+            </p>
           </div>
           <div className='py-7 flex flex-col gap-5 btn-seccondary items-center rounded-3xl px-2'>
-            <svg width="47" height="46" viewBox="0 0 47 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.6866 34.7876V30.8201" stroke="white" stroke-width="3" stroke-linecap="round" />
-              <path d="M23.5 34.7875V26.8525" stroke="white" stroke-width="3" stroke-linecap="round" />
-              <path d="M33.3134 34.7874V22.8657" stroke="white" stroke-width="3" stroke-linecap="round" />
-              <path d="M33.3133 11.2124L32.4316 12.2474C27.5441 17.9591 20.9891 22.0032 13.6866 23.8241" stroke="white" stroke-width="3" stroke-linecap="round" />
-              <path d="M27.6975 11.2124H33.3133V16.8091" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M17.75 42.1666H29.25C38.8334 42.1666 42.6667 38.3333 42.6667 28.7499V17.2499C42.6667 7.66659 38.8334 3.83325 29.25 3.83325H17.75C8.16671 3.83325 4.33337 7.66659 4.33337 17.2499V28.7499C4.33337 38.3333 8.16671 42.1666 17.75 42.1666Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <svg
+              width='47'
+              height='46'
+              viewBox='0 0 47 46'
+              fill='none'
+              xmlns='http://www.w3.org/2000/svg'
+            >
+              <path
+                d='M13.6866 34.7876V30.8201'
+                stroke='white'
+                stroke-width='3'
+                stroke-linecap='round'
+              />
+              <path
+                d='M23.5 34.7875V26.8525'
+                stroke='white'
+                stroke-width='3'
+                stroke-linecap='round'
+              />
+              <path
+                d='M33.3134 34.7874V22.8657'
+                stroke='white'
+                stroke-width='3'
+                stroke-linecap='round'
+              />
+              <path
+                d='M33.3133 11.2124L32.4316 12.2474C27.5441 17.9591 20.9891 22.0032 13.6866 23.8241'
+                stroke='white'
+                stroke-width='3'
+                stroke-linecap='round'
+              />
+              <path
+                d='M27.6975 11.2124H33.3133V16.8091'
+                stroke='white'
+                stroke-width='3'
+                stroke-linecap='round'
+                stroke-linejoin='round'
+              />
+              <path
+                d='M17.75 42.1666H29.25C38.8334 42.1666 42.6667 38.3333 42.6667 28.7499V17.2499C42.6667 7.66659 38.8334 3.83325 29.25 3.83325H17.75C8.16671 3.83325 4.33337 7.66659 4.33337 17.2499V28.7499C4.33337 38.3333 8.16671 42.1666 17.75 42.1666Z'
+                stroke='white'
+                stroke-width='3'
+                stroke-linecap='round'
+                stroke-linejoin='round'
+              />
             </svg>
 
             <p className='text-lg text-white font-semibold'>Web Applications</p>
           </div>
           <div className='py-7 flex flex-col gap-5 bg-white items-center rounded-3xl px-2'>
-            <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M18.9001 38.8333H28.1001C35.7667 38.8333 38.8334 35.7666 38.8334 28.1V18.9C38.8334 11.2333 35.7667 8.16663 28.1001 8.16663H18.9001C11.2334 8.16663 8.16675 11.2333 8.16675 18.9V28.1C8.16675 35.7666 11.2334 38.8333 18.9001 38.8333Z" stroke="#640EF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M20.6251 33.0833H26.3751C31.1667 33.0833 33.0834 31.1666 33.0834 26.375V20.625C33.0834 15.8333 31.1667 13.9166 26.3751 13.9166H20.6251C15.8334 13.9166 13.9167 15.8333 13.9167 20.625V26.375C13.9167 31.1666 15.8334 33.0833 20.6251 33.0833Z" stroke="#640EF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M15.8525 8.16671V4.33337" stroke="#640EF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M23.5 8.16671V4.33337" stroke="#640EF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M31.1667 8.16671V4.33337" stroke="#640EF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M38.8333 15.8334H42.6666" stroke="#640EF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M38.8333 23.5H42.6666" stroke="#640EF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M38.8333 31.1666H42.6666" stroke="#640EF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M31.1667 38.8333V42.6666" stroke="#640EF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M23.5193 38.8333V42.6666" stroke="#640EF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M15.8525 38.8333V42.6666" stroke="#640EF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M4.33325 15.8334H8.16659" stroke="#640EF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M4.33325 23.5H8.16659" stroke="#640EF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M4.33325 31.1666H8.16659" stroke="#640EF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M23.5 19.0917L21.6984 22.235C21.2959 22.925 21.6217 23.5 22.4267 23.5H24.5734C25.3784 23.5 25.7042 24.075 25.3017 24.765L23.5 27.9083" stroke="#640EF1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <svg
+              width='47'
+              height='47'
+              viewBox='0 0 47 47'
+              fill='none'
+              xmlns='http://www.w3.org/2000/svg'
+            >
+              <path
+                d='M18.9001 38.8333H28.1001C35.7667 38.8333 38.8334 35.7666 38.8334 28.1V18.9C38.8334 11.2333 35.7667 8.16663 28.1001 8.16663H18.9001C11.2334 8.16663 8.16675 11.2333 8.16675 18.9V28.1C8.16675 35.7666 11.2334 38.8333 18.9001 38.8333Z'
+                stroke='#640EF1'
+                stroke-width='3'
+                stroke-linecap='round'
+                stroke-linejoin='round'
+              />
+              <path
+                d='M20.6251 33.0833H26.3751C31.1667 33.0833 33.0834 31.1666 33.0834 26.375V20.625C33.0834 15.8333 31.1667 13.9166 26.3751 13.9166H20.6251C15.8334 13.9166 13.9167 15.8333 13.9167 20.625V26.375C13.9167 31.1666 15.8334 33.0833 20.6251 33.0833Z'
+                stroke='#640EF1'
+                stroke-width='3'
+                stroke-linecap='round'
+                stroke-linejoin='round'
+              />
+              <path
+                d='M15.8525 8.16671V4.33337'
+                stroke='#640EF1'
+                stroke-width='3'
+                stroke-linecap='round'
+                stroke-linejoin='round'
+              />
+              <path
+                d='M23.5 8.16671V4.33337'
+                stroke='#640EF1'
+                stroke-width='3'
+                stroke-linecap='round'
+                stroke-linejoin='round'
+              />
+              <path
+                d='M31.1667 8.16671V4.33337'
+                stroke='#640EF1'
+                stroke-width='3'
+                stroke-linecap='round'
+                stroke-linejoin='round'
+              />
+              <path
+                d='M38.8333 15.8334H42.6666'
+                stroke='#640EF1'
+                stroke-width='3'
+                stroke-linecap='round'
+                stroke-linejoin='round'
+              />
+              <path
+                d='M38.8333 23.5H42.6666'
+                stroke='#640EF1'
+                stroke-width='3'
+                stroke-linecap='round'
+                stroke-linejoin='round'
+              />
+              <path
+                d='M38.8333 31.1666H42.6666'
+                stroke='#640EF1'
+                stroke-width='3'
+                stroke-linecap='round'
+                stroke-linejoin='round'
+              />
+              <path
+                d='M31.1667 38.8333V42.6666'
+                stroke='#640EF1'
+                stroke-width='3'
+                stroke-linecap='round'
+                stroke-linejoin='round'
+              />
+              <path
+                d='M23.5193 38.8333V42.6666'
+                stroke='#640EF1'
+                stroke-width='3'
+                stroke-linecap='round'
+                stroke-linejoin='round'
+              />
+              <path
+                d='M15.8525 38.8333V42.6666'
+                stroke='#640EF1'
+                stroke-width='3'
+                stroke-linecap='round'
+                stroke-linejoin='round'
+              />
+              <path
+                d='M4.33325 15.8334H8.16659'
+                stroke='#640EF1'
+                stroke-width='3'
+                stroke-linecap='round'
+                stroke-linejoin='round'
+              />
+              <path
+                d='M4.33325 23.5H8.16659'
+                stroke='#640EF1'
+                stroke-width='3'
+                stroke-linecap='round'
+                stroke-linejoin='round'
+              />
+              <path
+                d='M4.33325 31.1666H8.16659'
+                stroke='#640EF1'
+                stroke-width='3'
+                stroke-linecap='round'
+                stroke-linejoin='round'
+              />
+              <path
+                d='M23.5 19.0917L21.6984 22.235C21.2959 22.925 21.6217 23.5 22.4267 23.5H24.5734C25.3784 23.5 25.7042 24.075 25.3017 24.765L23.5 27.9083'
+                stroke='#640EF1'
+                stroke-width='3'
+                stroke-linecap='round'
+                stroke-linejoin='round'
+              />
             </svg>
-            <p className='text-lg font-primary font-semibold'>Landing Page Website</p>
+            <p className='text-lg font-primary font-semibold'>
+              Landing Page Website
+            </p>
           </div>
         </div>
       </div>
