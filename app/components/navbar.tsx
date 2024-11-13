@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     // lg:px-[75px]
-    <nav className='flex w-full px-4 py-5 lg:py-8 items-center justify-between'>
+    <nav className='flex max-w-screen-xl m-auto px-4 py-5 lg:py-8 items-center justify-between'>
       <button
         onClick={() => openMenu()}
         className='hidden sm:inline-block lg:hidden'

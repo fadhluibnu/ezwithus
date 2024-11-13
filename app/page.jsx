@@ -12,7 +12,7 @@ const SectionOne = ({ idSection }) => {
     <>
       <section
         id={idSection}
-        className='w-100 px-4 py-5 lg:py-8 lg:mt-1 xl:mt-6 grid md:grid-cols-2 items-center'
+        className='max-w-screen-xl m-auto px-4 py-5 lg:py-8 lg:mt-1 xl:mt-6 grid md:grid-cols-2 items-center'
       >
         <div className='flex flex-col gap-9 xl:max-w-[524px]'>
           <div>
@@ -214,7 +214,7 @@ const SectionTwo = ({ idSection }) => {
   return (
     <section
       id={idSection}
-      className='w-100 px-4 py-5 lg:py-8 md:mt-5 lg:mt-12'
+      className='max-w-screen-xl m-auto px-4 py-5 lg:py-8 md:mt-5 lg:mt-12'
     >
       <div className='flex flex-col gap-2.5 items-center'>
         <h1 className='font-["ClashDisplay-Semibold"] text-2xl md:text-4xl lg:text-5xl lg:text-center'>
@@ -250,7 +250,7 @@ const SectionThree = ({ idSection }) => {
     // lg:px-[75px]
     <section
       id={idSection}
-      className='w-100 px-4 py-5 lg:py-8 md:mt-5 lg:mt-12'
+      className='max-w-screen-xl m-auto px-4 py-5 lg:py-8 md:mt-5 lg:mt-12'
     >
       <div className='flex flex-col gap-2.5 sm:items-center'>
         <h1 className='font-["ClashDisplay-Semibold"] text-2xl md:text-4xl lg:text-5xl lg:text-center'>
@@ -491,7 +491,7 @@ const SectionFour = ({ idSection }) => {
     // lg:px-[75px]
     <section
       id={idSection}
-      className='w-100 px-4 py-5 lg:py-8 md:mt-5 lg:mt-12 grid md:grid-cols-2 gap-5'
+      className='max-w-screen-xl m-auto px-4 py-5 lg:py-8 md:mt-5 lg:mt-12 grid md:grid-cols-2 gap-5'
     >
       <img
         className='hidden md:block'
@@ -545,7 +545,7 @@ const SectionFive = ({ idSection }) => {
   return (
     <section
       id={idSection}
-      className='w-100 px-4 py-5 lg:py-8 md:mt-5 lg:mt-12'
+      className='max-w-screen-xl m-auto px-4 py-5 mb-[330px] lg:py-8 md:mt-5 lg:mt-12'
     >
       <div className='flex flex-col gap-2.5 items-center'>
         <h1 className='font-["ClashDisplay-semibold"] text-2xl md:text-4xl lg:text-5xl lg:text-center'>
@@ -565,6 +565,17 @@ const SectionFive = ({ idSection }) => {
   );
 };
 
+const SectionSeven = ({ idSection }) => {
+  return (
+    <section
+      id={idSection}
+      className='px-4 pb-5 pt-[330px] lg:pb-8 bg-[#070C29]'
+    >
+      <div className='flex flex-col gap-2.5 items-center'></div>
+    </section>
+  );
+};
+
 export default function Home() {
   return (
     <>
@@ -573,6 +584,7 @@ export default function Home() {
       <SectionThree idSection='portofolio' />
       <SectionFour idSection='alur' />
       <SectionFive idSection='testimoni' />
+      <SectionSeven idSection='footer' />
     </>
   );
 }
