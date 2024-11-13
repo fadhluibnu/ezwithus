@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import Button from './components/button';
 import PriceCard from './components/price-card';
@@ -5,6 +6,7 @@ import ProjectCard from './components/project-card';
 import Link from 'next/link';
 import FlowCard from './components/flow-card';
 import TestiCard from './components/testimoni-card';
+import { useState } from 'react';
 
 const SectionOne = ({ idSection }) => {
   // lg:px-[75px]
@@ -565,7 +567,13 @@ const SectionFive = ({ idSection }) => {
   );
 };
 
-const SectionSeven = ({ idSection }) => {
+const SectionSix = ({ idSection }) => {
+  // const [hide, setHide] = useState(
+  //   'block'
+  // )
+  // const hideChat = () => {
+  //   setHide('hidden')
+  // }
   return (
     <>
       <div className='max-w-screen-xl m-auto grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-30 rounded-[40px] p-12 bg-[#640EF1] relative top-48 mx-3 md:mx-4 lg:mx-auto md:left-0 md:right-0 z-30'>
@@ -983,6 +991,22 @@ const SectionSeven = ({ idSection }) => {
         </div>
         {/* 
       <div className='flex flex-col gap-2.5 items-center'></div> */}
+        <div className='p-4 lg:p-5 bg-[#2c57f4] rounded-full fixed z-50 right-4 lg:right-6 bottom-6 group transition-all hover:bg-black duration-200 ease-in-out'>
+          <svg
+            width='22'
+            height='22'
+            viewBox='0 0 22 22'
+            fill='none'
+            xmlns='http://www.w3.org/2000/svg'
+          >
+            <path
+              fill-rule='evenodd'
+              clip-rule='evenodd'
+              d='M20.8574 4.88932C21.3847 6.16202 21.3847 7.77394 21.3847 11.0001C21.3847 14.2262 21.3847 15.8393 20.8574 17.1109C20.1548 18.8071 18.8071 20.1548 17.1109 20.8574C15.8393 21.3847 14.2262 21.3847 11.0001 21.3847H7.53856C4.27548 21.3847 2.64279 21.3847 1.62971 20.3705C0.615478 19.3574 0.615479 17.7247 0.615479 14.4616V11.0001C0.615479 7.77394 0.615479 6.16202 1.14279 4.88932C1.84543 3.19309 3.19309 1.84543 4.88933 1.14279C6.16202 0.615479 7.77394 0.615479 11.0001 0.615479C14.2262 0.615479 15.8393 0.615479 17.1109 1.14279C18.8071 1.84543 20.1548 3.19309 20.8574 4.88932ZM6.38471 8.6924C6.38471 8.38638 6.50628 8.0929 6.72266 7.87651C6.93905 7.66012 7.23254 7.53856 7.53856 7.53856H14.4616C14.7677 7.53856 15.0611 7.66012 15.2775 7.87651C15.4939 8.0929 15.6155 8.38638 15.6155 8.6924C15.6155 8.99842 15.4939 9.29191 15.2775 9.50829C15.0611 9.72468 14.7677 9.84625 14.4616 9.84625H7.53856C7.23254 9.84625 6.93905 9.72468 6.72266 9.50829C6.50628 9.29191 6.38471 8.99842 6.38471 8.6924ZM6.38471 13.3078C6.38471 13.0018 6.50628 12.7083 6.72266 12.4919C6.93905 12.2755 7.23254 12.1539 7.53856 12.1539H11.0001C11.3061 12.1539 11.5996 12.2755 11.816 12.4919C12.0324 12.7083 12.1539 13.0018 12.1539 13.3078C12.1539 13.6138 12.0324 13.9073 11.816 14.1237C11.5996 14.3401 11.3061 14.4616 11.0001 14.4616H7.53856C7.23254 14.4616 6.93905 14.3401 6.72266 14.1237C6.50628 13.9073 6.38471 13.6138 6.38471 13.3078Z'
+              fill='white'
+            />
+          </svg>
+        </div>
       </section>
     </>
   );
@@ -996,7 +1020,7 @@ export default function Home() {
       <SectionThree idSection='portofolio' />
       <SectionFour idSection='alur' />
       <SectionFive idSection='testimoni' />
-      <SectionSeven idSection='footer' />
+      <SectionSix idSection='footer' />
     </>
   );
 }
