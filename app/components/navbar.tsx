@@ -42,12 +42,16 @@ const Navbar = () => {
           />
         </button>
         <div className='flex items-center gap-x-1.5'>
-          <img src='/assets/logo.webp' alt='logo' className='w-9 sm:w-10' />
+          <img
+            src='/assets/Logo1.webp'
+            alt='logo'
+            className='w-9 sm:w-10 rounded-full'
+          />
           <div>
             <h1 className='text-xl font-bold sm:text-2xl leading-none'>
-              ezwithus.
+              InSoft.
             </h1>
-            <p className='text-xs leading-none'>EAZY WITH US</p>
+            <p className='text-sm leading-none text-slate-600'>EazyWithUs</p>
           </div>
         </div>
       </div>
@@ -111,7 +115,7 @@ const Navbar = () => {
       </ul>
       <a
         href=''
-        className='btn-seccondary py-2 px-5 sm:py-2.5 sm:px-7 rounded-full text-white font-base hover:scale-105 hover:shadow-xl duration-300 focus:ring-2 focus:ring-stone-950 focus:ring-offset-2'
+        className='btn-primary py-2 px-5 sm:py-2.5 sm:px-7 rounded-full text-white font-base hover:scale-105 hover:shadow-xl duration-300 focus:ring-2 focus:ring-stone-950 focus:ring-offset-2'
       >
         Hubungi <span className='hidden lg:inline'>Kami</span>
       </a>

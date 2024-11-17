@@ -811,10 +811,19 @@ const SectionSix = ({ idSection }) => {
         <div className='grid md:grid-cols-3 max-w-screen-xl m-auto'>
           <div>
             <div className='flex items-center gap-x-1.5 pb-10'>
-              <img src='/assets/logo2.png' alt='logo' className='w-9 sm:w-10' />
-              <h1 className='text-xl text-white font-bold sm:text-2xl leading-none'>
-                InSoft
-              </h1>
+              <img
+                src='/assets/Logo1.webp'
+                alt='logo'
+                className='rounded-full w-9 sm:w-10'
+              />
+              <div>
+                <h1 className='text-xl text-white font-bold sm:text-2xl leading-none'>
+                  InSoft.
+                </h1>
+                <p className='text-sm leading-none text-slate-400'>
+                  EazyWithUs
+                </p>
+              </div>
             </div>
             <p className='text-sm text-[#5D5D7C]'>
               We provide various programming, website and application
