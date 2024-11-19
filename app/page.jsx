@@ -19,7 +19,7 @@ const SectionOne = ({ idSection }) => {
         <div className='flex flex-col gap-9 xl:max-w-[524px]'>
           <div>
             <p className='bg-white rounded-full px-4 py-2 inline-block text-sm font-medium'>
-              #EazyWithUs #KeepLearning
+              #EazyWithUs
             </p>
           </div>
           <div className='flex flex-col gap-2'>
